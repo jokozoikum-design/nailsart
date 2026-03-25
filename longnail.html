@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Long.Nail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family:system-ui;
+    background:#0f172a;
+    color:#fff;
+}
+
+.header {
+    background:linear-gradient(135deg,hsl(51,70%,60%),hsl(318,70%,60%));
+    padding:14px 20px;
+    font-weight:bold;
+}
+
+.header a {
+    color:white;
+    margin-left:10px;
+    text-decoration:none;
+}
+
+.container {
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+}
+
+h1 {
+    font-size:28px;
+    background:linear-gradient(135deg,hsl(51,70%,60%),hsl(318,70%,60%));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:14px;
+}
+
+.card {
+    border-radius:14px;
+    overflow:hidden;
+    background:#020617;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+    box-shadow:0 10px 30px hsl(209,70%,60%);
+}
+
+img {
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.layout {
+    display:flex;
+    gap:20px;
+}
+
+.sidebar {
+    width:300px;
+}
+
+.rel-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:10px;
+}
+
+.rel-card {
+    display:block;
+    background:#020617;
+    border-radius:10px;
+    overflow:hidden;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.rel-card img {
+    height:100px;
+}
+
+.footer {
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    background:#020617;
+}
+
+#lightbox {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#lightbox img {
+    max-width:95%;
+    max-height:95%;
+}
+</style>
+
+<script>
+function openLightbox(src){
+    const lb=document.getElementById('lightbox');
+    lb.style.display='flex';
+    lb.querySelector('img').src=src;
+}
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+nailsart | <a href="/">Home</a>
+</div>
+
+<div class="container">
+
+<h1>Long.Nail</h1>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+<div class="layout">
+
+<div style="flex:1">
+
+
+<h2>Long.Nail Gallery</h2>
+<p>
+Explore high-quality <b>Long.Nail</b> images in this curated gallery.
+Perfect for inspiration, wallpapers, and creative use.
+</p>
+<p>
+This page showcases a variety of visuals related to Long.Nail in a clean,
+modern layout designed for fast and enjoyable browsing.
+</p>
+<p>Enjoy premium Long.Nail wallpapers and creative visual inspiration.</p>
+
+<div class="grid">
+
+        <div class="card">
+            <img src="https://nailparadise.co.uk/wp-content/uploads/2020/05/multi-colour-ombre-design-on-long-coffin-shape-nails-with-gel-on-top-e1589749868423.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://khadijabeauty.com/wp-content/uploads/2022/12/iDbxeRLfUCXjbGkeIiNwDdZx0pHaLDU81671462248.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://thenewknew.com/wp-content/uploads/2022/12/Winter-nails-pin-2-683x1024.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/60/b8/b8/60b8b84e228ba877057750fe3d431538.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://trendyuniverse.com/wp-content/uploads/2024/10/Long-Ombre-Coffin-Nails-960x1200.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b5/c7/ce/b5c7ce6608feba72f13ce9eed304eca8.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/13/4a/3e/134a3e58cc81ae845fcb8aec919b5e49.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/f1/48/51/f1485111b42c2eb242aa1c364ee8bff5.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2024/09/Trendy-Long-Nail-Designs-0914-4.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://media.allure.com/photos/644827954c693fe1f65378eb/16:9/w_2560%2Cc_limit/neon-nails.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/8a/eb/72/8aeb72bb38121f911bafae94d33aef08.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.fashiongonerogue.com/wp-content/uploads/2024/11/Ombre-Nails-Floral-Detail-Long.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/0c/fb/00/0cfb008dfc794bcd302728ef0570b44c.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/38/aa/3f/38aa3fe3dd8729ddd2faa6a71f18e56f.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://alexie.co/wp-content/uploads/2023/09/Long-Sparkly-Ombre-Coffin-Nails-1170x1462.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/c3/9b/8a/c39b8a95376317a5543b86971ac7d72e.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.byrdie.com/thmb/E_wjOTM7oVno7mMyzxYlNBsANVw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/longnails_recirc-6b0178e25b824cae96ea14dd6951b50c.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/2c/71/83/2c718340189e80021a8da9a2da4f1fa4.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/1e/2f/f0/1e2ff0cfdb8e86692d843a61fd912bf1.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.fashiongonerogue.com/wp-content/uploads/2024/11/Glitter-Black-Ombre-Long-Nails.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/40/b4/aa/40b4aa21016effea0833f8953d6eba3a.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/91/3b/4b/913b4b0dd82fbc4ed4b223b39ba77ed5.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/34/62/c9/3462c93b6297281b011325c5021d1a7d.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/4f/f5/54/4ff554d6758ddadeb0c312fd6ea37964.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.itakeyou.co.uk/idea/wp-content/uploads/2021/04/nail-art-designs-11.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/1c/17/14/1c1714dc92674c5d0680d6042204b472.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/v1yPAE6E6Bg/oar2.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&amp;rs=AOn4CLCoE0vbGxp3dKDTjWfBc9jYg6sQFQ" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.fabmood.com/wp-content/uploads/2021/08/summer-nail-trends-2021-4.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/8d/14/3a/8d143a9b18873972a6fd5501e5449326.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/01/67/cc/0167ccdd34ee6bee01d90197521709d3.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+</div>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+
+
+</div>
+
+<div class="sidebar">
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© nailsart | Dynamic Gallery
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img>
+</div>
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4864462,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4864462&101" alt="stats online users" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
