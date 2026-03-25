@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Studio Nail Art Simple</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family:system-ui;
+    background:#0f172a;
+    color:#fff;
+}
+
+.header {
+    background:linear-gradient(135deg,hsl(57,70%,60%),hsl(156,70%,60%));
+    padding:14px 20px;
+    font-weight:bold;
+}
+
+.header a {
+    color:white;
+    margin-left:10px;
+    text-decoration:none;
+}
+
+.container {
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+}
+
+h1 {
+    font-size:28px;
+    background:linear-gradient(135deg,hsl(57,70%,60%),hsl(156,70%,60%));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:14px;
+}
+
+.card {
+    border-radius:14px;
+    overflow:hidden;
+    background:#020617;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+    box-shadow:0 10px 30px hsl(145,70%,60%);
+}
+
+img {
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.layout {
+    display:flex;
+    gap:20px;
+}
+
+.sidebar {
+    width:300px;
+}
+
+.rel-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:10px;
+}
+
+.rel-card {
+    display:block;
+    background:#020617;
+    border-radius:10px;
+    overflow:hidden;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.rel-card img {
+    height:100px;
+}
+
+.footer {
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    background:#020617;
+}
+
+#lightbox {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#lightbox img {
+    max-width:95%;
+    max-height:95%;
+}
+</style>
+
+<script>
+function openLightbox(src){
+    const lb=document.getElementById('lightbox');
+    lb.style.display='flex';
+    lb.querySelector('img').src=src;
+}
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+nailsart | <a href="/">Home</a>
+</div>
+
+<div class="container">
+
+<h1>Studio Nail Art Simple</h1>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+<div class="layout">
+
+<div style="flex:1">
+
+
+<h2>Studio Nail Art Simple Gallery</h2>
+<p>
+Explore high-quality <b>Studio Nail Art Simple</b> images in this curated gallery.
+Perfect for inspiration, wallpapers, and creative use.
+</p>
+<p>
+This page showcases a variety of visuals related to Studio Nail Art Simple in a clean,
+modern layout designed for fast and enjoyable browsing.
+</p>
+<p>Find amazing Studio Nail Art Simple images updated regularly with fresh content.</p>
+
+<div class="grid">
+
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/mtpZGyQ0OQg/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/62/56/8f/62568fe1bcc11bb0fa3d45c0158c8570.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-17.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-6.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/bajXExJtcMA/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/ud6HaErToRs/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/tUfBQ-S67fk/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/31/ef/ef/31efef19aa5751ece818a1e220c25d41.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/88PCw9Fl85c/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-9.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/FOpVhxKpYTY/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/jgq4PCx53hw/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://1.bp.blogspot.com/-0UybSr_gXuk/TapwZbkQZMI/AAAAAAAAA0w/xRh6Nt97wDc/s1600/A+Simple+Nail+Art+Tutorial+10.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-3.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/1K-YoNovWPg/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.beyoung.in/blog/wp-content/uploads/2022/08/Simple-Nail-Art-Designs-Header-1.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/ehcQ6EReDAk/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/2EgcrwanF2I/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.realsimple.com/thmb/HWNosgUOc1XkXvLgG8fMIkuD9zE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/easy-nail-art-ideas-cc98c873ebb24a75ae6aaeba2c2a3fef.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/61/af/f2/61aff2b003ae78b20bf3fc0a3e82e49e.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/1b/ee/0c/1bee0c6111a529cf5212a402c54f40b8.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-14.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/db/2c/b5/db2cb5033ab4e182f932b5a0ddb12472.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-10.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/WAYRf-kfnOI/oardefault.jpg?sqp=-oaymwEkCOgCEIAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&amp;rs=AOn4CLB7YGM-PDtjJFB_ZAfZLVD_GZJMdg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/419Tqxx58W8/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/ab/e3/85/abe385efe97a91c1ee6f326f025952b7.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://howlifestyles.com/wp-content/uploads/2023/06/Simple-nail-art-20230611-11.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/2f/c4/80/2fc4809d6cf5979631f20f0f32ab7278.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/a9onT53zHe4/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+</div>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+
+
+</div>
+
+<div class="sidebar">
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© nailsart | Dynamic Gallery
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img>
+</div>
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4864462,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4864462&101" alt="stats online users" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
