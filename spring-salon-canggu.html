@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Salon Canggu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family:system-ui;
+    background:#0f172a;
+    color:#fff;
+}
+
+.header {
+    background:linear-gradient(135deg,hsl(325,70%,60%),hsl(245,70%,60%));
+    padding:14px 20px;
+    font-weight:bold;
+}
+
+.header a {
+    color:white;
+    margin-left:10px;
+    text-decoration:none;
+}
+
+.container {
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+}
+
+h1 {
+    font-size:28px;
+    background:linear-gradient(135deg,hsl(325,70%,60%),hsl(245,70%,60%));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:14px;
+}
+
+.card {
+    border-radius:14px;
+    overflow:hidden;
+    background:#020617;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+    box-shadow:0 10px 30px hsl(118,70%,60%);
+}
+
+img {
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.layout {
+    display:flex;
+    gap:20px;
+}
+
+.sidebar {
+    width:300px;
+}
+
+.rel-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:10px;
+}
+
+.rel-card {
+    display:block;
+    background:#020617;
+    border-radius:10px;
+    overflow:hidden;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.rel-card img {
+    height:100px;
+}
+
+.footer {
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    background:#020617;
+}
+
+#lightbox {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#lightbox img {
+    max-width:95%;
+    max-height:95%;
+}
+</style>
+
+<script>
+function openLightbox(src){
+    const lb=document.getElementById('lightbox');
+    lb.style.display='flex';
+    lb.querySelector('img').src=src;
+}
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+nailsart | <a href="/">Home</a>
+</div>
+
+<div class="container">
+
+<h1>Spring Salon Canggu</h1>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+<div class="layout">
+
+<div style="flex:1">
+
+
+<h2>Spring Salon Canggu Gallery</h2>
+<p>
+Explore high-quality <b>Spring Salon Canggu</b> images in this curated gallery.
+Perfect for inspiration, wallpapers, and creative use.
+</p>
+<p>
+This page showcases a variety of visuals related to Spring Salon Canggu in a clean,
+modern layout designed for fast and enjoyable browsing.
+</p>
+<p>Explore the best Spring Salon Canggu visuals in a modern and fast-loading gallery.</p>
+
+<div class="grid">
+
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/cddcf4_a38bfa2f92bc48719238f2ce6d207121~mv2.jpg/v1/fill/w_306,h_219,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cddcf4_a38bfa2f92bc48719238f2ce6d207121~mv2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.insightbali.com/wp-content/uploads/2022/09/Spring-Spa-@spring_spa.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/045ee3_9d84f0096535479d95f91bfbbf12badb~mv2.jpg/v1/fill/w_579,h_714,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/hairshop-canggu-pic.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.wandernesia.com/wp-content/uploads/2019/07/spring-spa-canggu-510x382.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/e6a489_2d5f412f69914469a7c3be33a853b61f~mv2.jpg/v1/crop/x_1514,y_0,w_2119,h_3667/fill/w_445,h_770,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_3050_JPG.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://cdn.sanity.io/images/rizm0do5/production/b5127829898723edabb0a9a41274ccb8d3f8d062-874x1136.jpg?rect=0,335,874,459&amp;w=1200&amp;h=630&amp;q=75&amp;auto=format" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.gowabi.co.id/system/pictures/images/000/000/192/big_slider_pic/Untitled_design_(7).jpg?1566976196" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/cddcf4_f35d0c8f31b04a4d9ae5ad95c1897b48~mv2_d_3024_4032_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/cddcf4_f35d0c8f31b04a4d9ae5ad95c1897b48~mv2_d_3024_4032_s_4_2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://bali.com/wp-content/uploads/2020/09/119649512_3353262318100492_5001624169207797383_n.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://balifoodandtravel.com/wp-content/uploads/2023/08/spring-bali-spa-3.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/e6a489_b7f45ca1dc3b4ef7984ea65a414dbd45~mv2.jpg/v1/fill/w_884,h_589,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e6a489_b7f45ca1dc3b4ef7984ea65a414dbd45~mv2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/e6a489_d177892b9a9848d58ce1ce0ae46170b1~mv2.jpg/v1/fill/w_490,h_327,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/e6a489_d177892b9a9848d58ce1ce0ae46170b1~mv2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://bali.com/wp-content/uploads/2020/09/120038828_3371503202943070_7700194741470047954_o.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.gowabi.co.id/system/pictures/images/000/000/196/big_slider_pic/Untitled_design_(11).jpg?1566976230" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/e6a489_2d5f412f69914469a7c3be33a853b61f~mv2.jpg/v1/fill/w_840,h_560,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e6a489_2d5f412f69914469a7c3be33a853b61f~mv2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/590d7cf429687fab6af77408/1509520109080-MT0W8M9FPH21D8ESXS0T/Spring+(12+of+12).jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/590d7cf429687fab6af77408/1509520092662-1X8XAYCNUVO3PRK2FOH8/Spring+(9+of+12).jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/CjsLDWl029Q/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgWihAMA8=&amp;rs=AOn4CLD8HQGAcmjmfDsw_FFgw_Zv4oTVWQ" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://rinbeautystudio.com/images/slider-canggu.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/590d7cf429687fab6af77408/1509519938334-N3T9XDSYCYQL5RMYDZRX/Spring+(1+of+12).jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.russh.com/wp-content/uploads/2019/09/9-687x1024.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.glospabali.com/wp-content/uploads/2021/01/gallery-canggu-06.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i0.wp.com/www.reddoorbali.com/wp-content/uploads/2019/10/770-10-3.jpg?resize=1440%2C739&amp;ssl=1" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.glospabali.com/wp-content/uploads/2021/01/gallery-canggu-04.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/cddcf4_e60d921b9d9b4119957420b90339136a~mv2.jpg/v1/fill/w_306,h_161,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cddcf4_e60d921b9d9b4119957420b90339136a~mv2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="http://denizennavigator.com/wp-content/uploads/2017/07/spring.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/590d7cf429687fab6af77408/1509519972528-7EEPIOY4A1AZQQT1HTAL/Spring+(2+of+12).jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/590d7cf429687fab6af77408/1509520011559-F5DDEDPAS37PR5GCVGS8/Spring+(3+of+12).jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://lh3.googleusercontent.com/pw/AJFCJaWijte9oiC-A2AL5ndCVRoftbcG0WN3qwxPNzH7uw3Zh6gDS9UdxYwZEIXEdYI3r3HHxM15AA8vKCx1PtW8aiX44CIzacCgUh7J4FcIzkoUKKwh7vqXT2WY_Vs8pzC7M8YUYCxNPKZCN2dP5RomdCM=w743-h990-s-no?authuser=0" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/590d7cf429687fab6af77408/1509519805619-S8IOHB3U73PO6R5DY9DF/Spring+(4+of+12).jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+</div>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+
+
+</div>
+
+<div class="sidebar">
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© nailsart | Dynamic Gallery
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img>
+</div>
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4864462,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4864462&101" alt="stats online users" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
