@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nail Indigo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family:system-ui;
+    background:#0f172a;
+    color:#fff;
+}
+
+.header {
+    background:linear-gradient(135deg,hsl(200,70%,60%),hsl(191,70%,60%));
+    padding:14px 20px;
+    font-weight:bold;
+}
+
+.header a {
+    color:white;
+    margin-left:10px;
+    text-decoration:none;
+}
+
+.container {
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+}
+
+h1 {
+    font-size:28px;
+    background:linear-gradient(135deg,hsl(200,70%,60%),hsl(191,70%,60%));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:14px;
+}
+
+.card {
+    border-radius:14px;
+    overflow:hidden;
+    background:#020617;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+    box-shadow:0 10px 30px hsl(180,70%,60%);
+}
+
+img {
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.layout {
+    display:flex;
+    gap:20px;
+}
+
+.sidebar {
+    width:300px;
+}
+
+.rel-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:10px;
+}
+
+.rel-card {
+    display:block;
+    background:#020617;
+    border-radius:10px;
+    overflow:hidden;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.rel-card img {
+    height:100px;
+}
+
+.footer {
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    background:#020617;
+}
+
+#lightbox {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#lightbox img {
+    max-width:95%;
+    max-height:95%;
+}
+</style>
+
+<script>
+function openLightbox(src){
+    const lb=document.getElementById('lightbox');
+    lb.style.display='flex';
+    lb.querySelector('img').src=src;
+}
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+nailsart | <a href="/">Home</a>
+</div>
+
+<div class="container">
+
+<h1>Nail Indigo</h1>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+<div class="layout">
+
+<div style="flex:1">
+
+
+<h2>Nail Indigo Gallery</h2>
+<p>
+Explore high-quality <b>Nail Indigo</b> images in this curated gallery.
+Perfect for inspiration, wallpapers, and creative use.
+</p>
+<p>
+This page showcases a variety of visuals related to Nail Indigo in a clean,
+modern layout designed for fast and enjoyable browsing.
+</p>
+<p>Discover stunning Nail Indigo collections curated for inspiration and creativity.</p>
+
+<div class="grid">
+
+        <div class="card">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/12/b6/5a/12b65a3e9327e6815f282eed7ab6a388.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/e8/a8/4c/e8a84c82e715be5244b7fa256d8c4c56.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://indigo-nails.nl/20633-large_default/princess-matte-top-coat-.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/94/41/0b/94410b8a5a8defaa4756d844a9839881.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/dc/bf/08/dcbf080671e69211e7944d91aea4105f.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/7c/c2/6f/7cc26fb1cff9bcbc5d2e2d2014867e11.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/0b/ab/99/0bab99f56151886b6d82fc8ea6d791dd.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b9/2b/3c/b92b3c48931fc604c29dc0114c1f1930.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/03/e3/4e/03e34e40fd9495e6db1d1b47abc39eef.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/55/a6/f7/55a6f77904c802311098727094145014--cannes-nail-art.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/7c/90/fa/7c90fa7fe1dba80d1646b183a771bfe8.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/a9/b3/d6/a9b3d686178d1df9259c224d05dbdfd6.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/b876bb758da342faaba914bbfe76d6af.jpg/v1/crop/x_1915,y_557,w_1686,h_1841/fill/w_551,h_602,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b876bb758da342faaba914bbfe76d6af.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://indigo-nails.nl/20566-large_default/keratin-shea-elixir-alter-ego.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/27/16/e0/2716e05d16f4ff4047368b61c144fdd7--fashion-details-indigo.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://styleyouroccasion.com/wp-content/uploads/2023/02/Purple-Ombre-Nails-@indigonails.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://3.bp.blogspot.com/-_-1DhckBCGg/W7jaczFErJI/AAAAAAAAF5I/-W84A-6aCzgZUHAAIg4RJXzbhW1Wi1sbgCEwYBhgL/s1600/Indigo%2BNails%2BBlue%2BJeans%2BCollection.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/67/f4/9e/67f49e282975b39f89a214b7d546e362.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/ee/e8/0d/eee80db190b5bdd97dbe5d3d2fc99e8a.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/a0/a0/04/a0a0041d1741ca20f6449effad7c5154.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/9d/52/03/9d5203d79ecc2d82e7525bc40f2e898d.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/00/9a/ab/009aabe4aea38dc2ded4da42b8cb7812.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://eshop.indigo-nails.gr/wp-content/uploads/2022/09/matowe-topy-3840x1610_2_EN-2048x859.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/f8/68/7f/f8687fcbb9e5a445a3451ad815123453.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://thefab20s.com/wp-content/uploads/2023/03/Indigo-Ombre-Nails.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://styleyouroccasion.com/wp-content/uploads/2023/02/Purple-Ombre-Nails-2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/73/08/92/730892823d66c887a127192babcd82fd.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/90/f2/6d/90f26d5144c71bb8bd4d6cde492b99ef.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/7CoCYQucVLA/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/52/9d/1a/529d1a7de8bf07ede6603f0ae6ba7f9c.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+</div>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+
+
+</div>
+
+<div class="sidebar">
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© nailsart | Dynamic Gallery
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img>
+</div>
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4864462,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4864462&101" alt="stats online users" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
