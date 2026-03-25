@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Shinehorn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family:system-ui;
+    background:#0f172a;
+    color:#fff;
+}
+
+.header {
+    background:linear-gradient(135deg,hsl(108,70%,60%),hsl(149,70%,60%));
+    padding:14px 20px;
+    font-weight:bold;
+}
+
+.header a {
+    color:white;
+    margin-left:10px;
+    text-decoration:none;
+}
+
+.container {
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+}
+
+h1 {
+    font-size:28px;
+    background:linear-gradient(135deg,hsl(108,70%,60%),hsl(149,70%,60%));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:14px;
+}
+
+.card {
+    border-radius:14px;
+    overflow:hidden;
+    background:#020617;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+    box-shadow:0 10px 30px hsl(97,70%,60%);
+}
+
+img {
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.layout {
+    display:flex;
+    gap:20px;
+}
+
+.sidebar {
+    width:300px;
+}
+
+.rel-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:10px;
+}
+
+.rel-card {
+    display:block;
+    background:#020617;
+    border-radius:10px;
+    overflow:hidden;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.rel-card img {
+    height:100px;
+}
+
+.footer {
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    background:#020617;
+}
+
+#lightbox {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#lightbox img {
+    max-width:95%;
+    max-height:95%;
+}
+</style>
+
+<script>
+function openLightbox(src){
+    const lb=document.getElementById('lightbox');
+    lb.style.display='flex';
+    lb.querySelector('img').src=src;
+}
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display='none';
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+nailsart | <a href="/">Home</a>
+</div>
+
+<div class="container">
+
+<h1>Spring Shinehorn</h1>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+<div class="layout">
+
+<div style="flex:1">
+
+
+<h2>Spring Shinehorn Gallery</h2>
+<p>
+Explore high-quality <b>Spring Shinehorn</b> images in this curated gallery.
+Perfect for inspiration, wallpapers, and creative use.
+</p>
+<p>
+This page showcases a variety of visuals related to Spring Shinehorn in a clean,
+modern layout designed for fast and enjoyable browsing.
+</p>
+<p>Explore the best Spring Shinehorn visuals in a modern and fast-loading gallery.</p>
+
+<div class="grid">
+
+        <div class="card">
+            <img src="https://slm-assets.secondlife.com/assets/24945434/lightbox/Sparkling-Shinehorn01.jpg?1573009451" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://yt3.googleusercontent.com/yBP4v776ZWWNUTUed1xjccKkosG7wrYRNihvcWy8DDN9aQmmrWgYrs_TEU3cCwKKhuPNdsSg0A=s900-c-k-c0x00ffffff-no-rj" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://ark.wiki.gg/images/9/96/Chibi-Spring_Shinehorn.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/ark-survival-evolved/images/2/20/Dossier_Shinehorn.png/revision/latest/scale-to-width-down/268?cb=20171215012337" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://upload-os-bbs.hoyolab.com/upload/2023/04/07/299264596/88c1225fbc6adc2d2b072ed6c9c60e15_2460859125193469630.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.elderberrydesignandflowers.com/wp-content/uploads/2015/05/Spring_0834.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c0c254b5-d5e9-4f60-88bd-a79a0e6c6889/dbx5l7e-63eed610-5969-4df0-84e3-57befecada50.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MwYzI1NGI1LWQ1ZTktNGY2MC04OGJkLWE3OWEwZTZjNjg4OVwvZGJ4NWw3ZS02M2VlZDYxMC01OTY5LTRkZjAtODRlMy01N2JlZmVjYWRhNTAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LtdTy5R-aZD-iYr6H-PrXwGq96OpA0zwN5jlTjyQjq0" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://get.pxhere.com/photo/wing-horn-spring-nikon-d80-391720.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://rehabilitationadvantage.com/wp-content/uploads/2019/06/Features-of-spring-loaded-shoehorn.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="http://d3eusfltcf410e.cloudfront.net/images/182-4041233-1030471.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/clans/8729288/ec9e8a8b43af8fc715d62aaee09fb587a53d3898.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://preview.redd.it/2mlh3g33trp31.png?auto=webp&amp;s=e83e45320941389f1e16849ee671e799063e0829" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://scskillman.files.wordpress.com/2021/02/img_20210206_184415_3402043834682615163112.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.thehallofeinar.com/wp-content/uploads/2019/03/Spring-at-Decoy-The-Hall-of-Einar-2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://progametalk.com/wp-content/uploads/2020/02/AKSHI-7.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/spring-hawthorn_402759-3353.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://higherlogicdownload.s3.amazonaws.com/AHEAD/38b602f4-ec53-451c-9be0-5c0bf5d27c0a/UploadedImages/Slider%20Images/2019_AHEAD_TO_YOU_webinar/Spring-Slider_Left.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/b7b081_5be04f5561574781a45e72d2fc01e3e5~mv2.jpg/v1/fill/w_811,h_1000,al_c,q_85,usm_0.66_1.00_0.01/b7b081_5be04f5561574781a45e72d2fc01e3e5~mv2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://ark.wiki.gg/images/thumb/2/27/Shinehorn_PaintRegion2.png/256px-Shinehorn_PaintRegion2.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/3Gy-znqjRCA/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://www.dododex.com/media/creature/shinehorn.png" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://cdn.slidesharecdn.com/ss_thumbnails/spring-120420185218-phpapp01-thumbnail.jpg?width=640&amp;height=640&amp;fit=bounds" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/771733601541254147/41B5CB22556F159B05E47259292BB0F4A5D6335F/?imw=268&amp;imh=268&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/tA1ZupCv6FE/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/oXiapJoFa2I/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://kinghorngardens.com/wp-content/uploads/2017/09/Spring2.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/1_LCIl67HK0/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://higherlogicdownload.s3.amazonaws.com/AHEAD/38b602f4-ec53-451c-9be0-5c0bf5d27c0a/UploadedImages/Slider Images/2019_AHEAD_TO_YOU_webinar/Spring-Slider_Right.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/GbSx49g1hPo/maxresdefault.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+        <div class="card">
+            <img src="https://as1.ftcdn.net/v2/jpg/03/12/96/88/1000_F_312968825_V4cIHZ7rDIesI5dFXG9KINzzteXFFUWa.jpg" loading="lazy"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.parentElement.style.display='none'">
+        </div>
+        
+</div>
+
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+
+
+</div>
+
+<div class="sidebar">
+<div id="ad-container" style="width:300px;height:250px;display:flex;justify-content:center;align-items:center;">
+
+<iframe
+src="https://kode-iklan.pages.dev/banner-header.html"
+width="300"
+height="250"
+frameborder="0"
+scrolling="no"
+loading="lazy"
+style="border:0;">
+</iframe>
+
+</div>
+
+<script>
+(function(){
+
+var iframe = document.querySelector("#ad-container iframe");
+
+iframe.onerror = function(){
+loadFallback();
+};
+
+setTimeout(function(){
+
+try{
+if(!iframe.contentWindow){
+loadFallback();
+}
+}catch(e){
+loadFallback();
+}
+
+},4000);
+
+function loadFallback(){
+
+document.getElementById("ad-container").innerHTML = `
+<script>
+  atOptions = {
+    'key' : '7ac906100b3d7fa40dc37bd1144cc138',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+<\/script>
+<script src="https://www.highperformanceformat.com/7ac906100b3d7fa40dc37bd1144cc138/invoke.js"><\/script>
+`;
+
+}
+
+})();
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© nailsart | Dynamic Gallery
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img>
+</div>
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4864462,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4864462&101" alt="stats online users" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
